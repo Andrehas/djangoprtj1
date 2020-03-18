@@ -8,4 +8,6 @@ def home(request):
     return render(request, "Gis/home.html")
 
 
-
+def about(request):
+    return render(request, "Gis/about.html")
+    return None

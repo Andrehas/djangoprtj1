@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 import Gis.views
 
+
 urlpatterns = [
     url(r'^$', Gis.views.home, name='home'),
+    url(r'^home/$', Gis.views.home, name='home'),
+    url(r'^about/$', Gis.views.about, name='about'),
 ]
 
