@@ -5,10 +5,14 @@
 {% endblock %}
 
 {% block content %}
-    <h1/>First page</h1>
-    <div class ="starter-tempalet"</div>
+    <h1/>Arcticles</h1>
+    {% for article in articles %}
+        <h3>article.title</h3>
+        <p>article.text</p>
+    {% endfor %}
+    <!--<div class ="starter-tempalet"</div>
     <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    </div>
+    </div>-->
 {% endblock %}
