@@ -7,8 +7,9 @@
 {% block content %}
     <h1/>Arcticles</h1>
     {% for article in articles %}
-        <h3>article.title</h3>
-        <p>article.text</p>
+        <h3><a href="{% url 'article' article.id %}">{{ article.title }}</a></h3>
+        <p>{{article.short_text}}</p>
+        <p>{% comment %}{{article.text}}{% endcomment %}</p>
     {% endfor %}
     <!--<div class ="starter-tempalet"</div>
     <div class="starter-template">
