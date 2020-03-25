@@ -29,3 +29,7 @@ def about(request):
 def show_articles(request, article_id):
     article = get_object_or_404(Article, id=article_id)
     return render(request, 'gis/article.html', {'article': article})
+
+
+def map(request):
+    return render(request, "Gis/map.html")
