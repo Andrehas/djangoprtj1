@@ -6,8 +6,16 @@ from Gis.models import Article
 
 
 def home(request):
-    # return HttpResponse("Hello world")
+    '''
+    return HttpResponse("Hello world")
     # return render(request, "Gis/home.html")
+    articles = Article.objects.all()
+    context = {
+        'articles': articles
+    }
+
+    return render(request, "Gis/home.html", context)
+    '''
     articles = Article.objects.all()
     context = {
         'articles': articles
@@ -15,15 +23,9 @@ def home(request):
     return render(request, "Gis/home.html", context)
 
 
-def show_admin_custom_page(request):
-    # some code
-    ctx = {'data': 'test'}
-    return render(request, 'spec/admin_custom_page.html', ctx)
-
-
 def about(request):
     return render(request, "Gis/about.html")
-    return None
+
 
 
 def show_articles(request, article_id):

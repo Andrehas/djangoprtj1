@@ -16,6 +16,6 @@ class Article(models.Model):
 
     def short_text(self):
         if len(self.text) >TEXT_LEN:
-            return  self.text[:TEXT_LEN]
+            return self.text[:TEXT_LEN]
         return self.text
 

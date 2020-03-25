@@ -5,15 +5,5 @@
 {% endblock %}
 
 {% block content %}
-    <h1/>Arcticles</h1>
-    {% for article in articles %}
-        <h3><a href="{% url 'article' article.id %}">{{ article.title }}</a></h3>
-        <p>{{article.short_text}}</p>
-        <p>{% comment %}{{article.text}}{% endcomment %}</p>
-    {% endfor %}
-    <!--<div class ="starter-tempalet"</div>
-    <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    </div>-->
+    Hello map
 {% endblock %}
